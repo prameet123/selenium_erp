@@ -39,16 +39,16 @@ public class hello {
         login_page.driver.findElement(By.linkText("Reports")).click();
         login_page.driver.findElement(By.id("NavNavigation_dl_navigation_rpt_SubMenu_2_HyperLink1_1")).click();
         login_page.driver.findElement(By.id("ContentPlaceHolder1_txtFrom")).click();
-
-
         List<WebElement> allDates=login_page.driver.findElements(By.xpath("//table[@class=' table-condensed']//td"));
+
 
 
         for(WebElement ele:allDates)
         {
 
             String date=ele.getText();
-/*
+          /*  System.out.println(date);
+
             if (date.equals("October 2018"))
             {
                 ele.click();
