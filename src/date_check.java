@@ -7,7 +7,7 @@ import java.util.List;
 public class date_check {
     public static void main(String[] args) throws InterruptedException {
 
-        System.setProperty("webdriver.gecko.driver", "E:\\software\\geckodriver-v0.21.0-win64\\geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver", "F:\\software\\selenium\\geckodriver.exe");
         FirefoxDriver driver = new FirefoxDriver();
 
         driver.get("http://seleniumpractise.blogspot.in/2016/08/how-to-handle-calendar-in-selenium.html");
