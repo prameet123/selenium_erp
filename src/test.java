@@ -20,7 +20,7 @@ public class test {
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.gecko.driver", "F:\\software\\selenium\\geckodriver.exe");
         login_page login_page=new login_page();
-       login_page.login();
+       login_page.admin();
 
         login_page.driver.findElement(By.id("lnkDefault")).click();
 

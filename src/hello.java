@@ -11,7 +11,7 @@ public class hello {
         System.setProperty("webdriver.gecko.driver", "F:\\software\\selenium\\geckodriver.exe");
 
         login_page login_page=new login_page();
-        login_page.login();
+        login_page.admin();
 
 
         WebElement l=login_page.driver.findElement(By.id("log"));
