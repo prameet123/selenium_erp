@@ -1,3 +1,4 @@
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -5,7 +6,7 @@ import org.openqa.selenium.support.ui.Select;
 import java.util.List;
 
 public class product_registration {
-    static String sr_number="swatianjali04";
+    static String sr_number="swatianjali08";
 
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.gecko.driver", "F:\\software\\selenium\\geckodriver.exe");
@@ -57,7 +58,10 @@ public class product_registration {
 
         }
         login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_msg")).sendKeys("condition ok");
-        login_page.driver.findElement(By.id("ContentPlaceHolder1_fuinvoice")).sendKeys("F:\\qwe.doc");
+        login_page.driver.findElement(By.id("ContentPlaceHolder1_fuinvoice")).sendKeys("F:\\qwe.txt");
         login_page.driver.findElement(By.id("ContentPlaceHolder1_btn_save")).click();
+        String toast =login_page.driver.findElement(By.className("toast-message")).getText();
+        System.out.println(toast);
+
     }
 }

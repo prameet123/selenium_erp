@@ -75,6 +75,9 @@ public class test {
         login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_password")).sendKeys("123");
 
         login_page.driver.findElement(By.id("ContentPlaceHolder1_btn_save")).click();
+      Alert alert =login_page.driver.switchTo().alert();
+      System.out.println(alert.getText());
+
 
     }
 
