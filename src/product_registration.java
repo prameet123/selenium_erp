@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.Select;
 import java.util.List;
 
 public class product_registration {
-    static String sr_number="swatianjali08";
+    static String sr_number="swatianjali09";
 
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.gecko.driver", "F:\\software\\selenium\\geckodriver.exe");
@@ -17,8 +17,8 @@ public class product_registration {
         login_page.driver.findElement(By.linkText("Transactions")).click();
         login_page.driver.findElement(By.id("NavNavigation_dl_navigation_rpt_SubMenu_1_HyperLink1_5")).click();
 
-        login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_name")).sendKeys("prameet");
-        login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_email")).sendKeys("prameet@yahoo.com");
+        login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_name")).sendKeys("shashank");
+        login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_email")).sendKeys("sh@yahoo.com");
         WebElement city = login_page.driver.findElement(By.id("ContentPlaceHolder1_ddl_Country"));
         Select dropdown_city = new Select(city);
         dropdown_city.selectByVisibleText("India");
@@ -30,7 +30,7 @@ public class product_registration {
         login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_dis")).sendKeys("Rudrapur");
         login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_area")).sendKeys("sanajay nagar");
         login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_pincode")).sendKeys("263153");
-        login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_contactno")).sendKeys("8979489949");
+        login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_contactno")).sendKeys("8586076390");
         login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_company")).sendKeys("luminous");
 
 
@@ -58,10 +58,14 @@ public class product_registration {
 
         }
         login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_msg")).sendKeys("condition ok");
-        login_page.driver.findElement(By.id("ContentPlaceHolder1_fuinvoice")).sendKeys("F:\\qwe.txt");
+        login_page.driver.findElement(By.id("ContentPlaceHolder1_fuinvoice")).sendKeys("F:\\qwe.doc");
         login_page.driver.findElement(By.id("ContentPlaceHolder1_btn_save")).click();
         String toast =login_page.driver.findElement(By.className("toast-message")).getText();
         System.out.println(toast);
+        login_page.driver.close();
+        complaints_booking booking=new complaints_booking();
+        booking.complaints();
+
 
     }
 }

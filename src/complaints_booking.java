@@ -8,7 +8,7 @@ import java.util.List;
 public class complaints_booking {
 
     static   product_registration product_registration=new product_registration();
-    public static void main(String[] args) throws InterruptedException {
+    public  void complaints() throws InterruptedException {
         System.setProperty("webdriver.gecko.driver", "F:\\software\\selenium\\geckodriver.exe");
         login_page login_page = new login_page();
         login_page.customerExexcutive();
@@ -112,6 +112,9 @@ public class complaints_booking {
         login_page.driver.findElement(By.id("ContentPlaceHolder1_txtLandMark")).sendKeys("sai mandir");
         login_page.driver.findElement(By.id("ContentPlaceHolder1_txtRemarks")).sendKeys("urgent");
         login_page.driver.findElement(By.id("ContentPlaceHolder1_btnSearch")).click();
+        String toast =login_page.driver.findElement(By.className("toast-message")).getText();
+        System.out.println(toast);
+        login_page.driver.close();
     }
 
 
