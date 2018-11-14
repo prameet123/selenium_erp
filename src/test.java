@@ -47,10 +47,10 @@ public class test {
         driver.findElement(By.id("ContentPlaceHolder1_btn_view")).click();*/
 
         login_page.driver.findElement(By.id("NavNavigation_dl_navigation_rpt_SubMenu_3_HyperLink1_1")).click();
-        login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_EnggName")).sendKeys("kishori lal");
-        login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_engg_code")).sendKeys("k1");
-        login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_phone")).sendKeys("8005446087");
-        login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_email")).sendKeys("h@mo.co");
+        login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_EnggName")).sendKeys("kishore kumar");
+        login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_engg_code")).sendKeys("kk01");
+        login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_phone")).sendKeys("8005446907");
+        login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_email")).sendKeys("kk1@mo.co");
 
         Thread.sleep(5000);
 
@@ -70,7 +70,7 @@ public class test {
 
         WebElement role = login_page.driver.findElement(By.id("ContentPlaceHolder1_ddl_engineerRole"));
         Select dropdown_role = new Select(role);
-        dropdown_role.selectByVisibleText("Service Engineer");
+        dropdown_role.selectByValue("28");
 
         login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_password")).sendKeys("123");
 
