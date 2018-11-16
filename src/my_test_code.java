@@ -16,12 +16,12 @@ public class my_test_code {
         login_page.techSuppor();
 
 
-        login_page.driver.findElement(By.cssSelector("div.col-sm-5 > div.complain-title > span")).click();
-        login_page.driver.findElement(By.cssSelector("a.collapsed > div.row > div.col-sm-3 > div.complain-title > span")).click();
-        login_page.driver.findElement(By.cssSelector("a.collapsed > div.row > div.col-sm-3 > div.complain-title > span")).click();
-        login_page.driver.findElement(By.cssSelector(".card:nth-child(3) > #headingOne")).click();
-        login_page.driver.findElement(By.cssSelector(".card:nth-child(3) > #headingOne .col-sm-3 span")).click();
-//** data picking
+          login_page.driver.findElement(By.cssSelector("div.col-sm-3 > div.complain-title > span")).click();
+
+        //login_page.driver.findElement(By.cssSelector("a.collapsed > div.row > div.col-sm-3 > div.complain-title > span")).click();// 1
+       // login_page.driver.findElement(By.cssSelector(".card:nth-child(3) > #headingOne")).click();//3
+      //  login_page.driver.findElement(By.cssSelector(".card:nth-child(3) > #headingOne .col-sm-3 span")).click();// line3
+//** date picking
        /*login_page.driver.findElement(By.id("ContentPlaceHolder1_txtPurchase")).click();
        login_page.driver.findElement(By.cssSelector("th.datepicker-switch")).click(); // for year selecting
        login_page.driver.findElement(By.xpath("//div[2]/table/thead/tr/th[2]")).click();// click on year

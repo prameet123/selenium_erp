@@ -11,6 +11,7 @@ public class complaints_booking {
 
 
     public static void complaints(String s) throws InterruptedException {
+        tech_support tech_support=new tech_support();
         System.setProperty("webdriver.gecko.driver", "F:\\software\\selenium\\geckodriver.exe");
         login_page login_page = new login_page();
         login_page.customerExexcutive();
@@ -166,6 +167,8 @@ public class complaints_booking {
         login_page.driver.findElement(By.id("ContentPlaceHolder1_btnSearch")).click();
         Thread.sleep(6000);
         login_page.driver.close();
+
+        tech_support.tech_f();
 
         //login_page.driver.close();
     }
