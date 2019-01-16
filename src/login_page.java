@@ -9,12 +9,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
      public void customerExexcutive() {
 
 
-         driver.get("http://103.43.40.23:8888/");
+         driver.get("http://103.43.40.23:2223/");
 
          //** login
          WebElement element = driver.findElement(By.xpath("//input[@name='txtUser']"));
          WebElement element1 = driver.findElement(By.xpath("//input[@name='txtPass']"));
-         element.sendKeys("sh01");
+         element.sendKeys("12244");
          element1.sendKeys("123");
          WebElement button = driver.findElement(By.xpath("//input[@id='btnLogin']"));
          button.click();
@@ -23,7 +23,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
      public void techSuppor() {
 
 
-         driver.get("http://103.43.40.23:8888/");
+         driver.get("http://103.43.40.23:2223/");
 
          //** login
          WebElement element = driver.findElement(By.xpath("//input[@name='txtUser']"));
@@ -37,7 +37,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
      public void admin() {
 
 
-         driver.get("http://103.43.40.23:8888/");
+         driver.get("http://103.43.40.23:2223/");
 
          //** login
          WebElement element = driver.findElement(By.xpath("//input[@name='txtUser']"));

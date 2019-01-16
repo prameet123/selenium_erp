@@ -47,10 +47,10 @@ public class test {
         driver.findElement(By.id("ContentPlaceHolder1_btn_view")).click();*/
 
         login_page.driver.findElement(By.id("NavNavigation_dl_navigation_rpt_SubMenu_3_HyperLink1_1")).click();
-        login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_EnggName")).sendKeys("kishore kumar");
-        login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_engg_code")).sendKeys("kk01");
+        login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_EnggName")).sendKeys("test");
+        login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_engg_code")).sendKeys("t1");
         login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_phone")).sendKeys("8005446907");
-        login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_email")).sendKeys("kk1@mo.co");
+        login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_email")).sendKeys("tuk1@mo.co");
 
         Thread.sleep(5000);
 
@@ -75,8 +75,8 @@ public class test {
         login_page.driver.findElement(By.id("ContentPlaceHolder1_txt_password")).sendKeys("123");
 
         login_page.driver.findElement(By.id("ContentPlaceHolder1_btn_save")).click();
-      Alert alert =login_page.driver.switchTo().alert();
-      System.out.println(alert.getText());
+        Alert alert =login_page.driver.switchTo().alert();
+        System.out.println(alert.getText());
 
 
     }
