@@ -148,11 +148,11 @@ public class complaints_booking {
             Thread.sleep(2000);
             WebElement customer_city = login_page.driver.findElement(By.id("ContentPlaceHolder1_ddlCity"));
             Select dropdown_customer_city = new Select(customer_city);
-            dropdown_customer_city.selectByValue("647");
+            dropdown_customer_city.selectByValue("708");
             Thread.sleep(2000);
             WebElement customer_locality = login_page.driver.findElement(By.id("ContentPlaceHolder1_ddlLocality"));
             Select dropdown_customer_locality = new Select(customer_locality);
-            dropdown_customer_locality.selectByValue("1433");
+            dropdown_customer_locality.selectByValue("1502");
 
             Thread.sleep(2000);
             login_page.driver.findElement(By.id("ContentPlaceHolder1_txtLandMark")).sendKeys("sai mandir");
