@@ -2,7 +2,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class name {
-    final String lexicon = "ABCDEFGHIJKLMNOPQRSTUVWXYZ12345674890";
+    final String lexicon = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     final java.util.Random rand = new java.util.Random();
 
